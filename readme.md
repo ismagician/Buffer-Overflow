@@ -2,6 +2,7 @@
 
 Tutorial de buffer overflow en Windows de 32 bits con el programa SLMail 5.5. Se hace uso de maquinas virtuales, una máquina con Parrot OS (máquina atacante) y otra con Windows 7 (máquina víctima).
 
+Nota: El tutorial toma como base el video [¿Cómo explotar el Buffer Overflow del OSCP con éxito?](https://www.youtube.com/watch?v=sdZ8aE7yxMk)
 
 Con pattern_create se genera un patron de carácteres 
 
