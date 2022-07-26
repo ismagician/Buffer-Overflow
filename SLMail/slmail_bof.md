@@ -18,7 +18,7 @@ Ejecutar el script en la máquina de atacante. En Immunity Debugger se pausará 
 
 ![image](./img/eip_offset.png)  
 
-con ``` pattern_offset -q dirección ``` se determina el offset
+Con ``` pattern_offset -q dirección ``` se determina el offset
 
 ![offset](./img/pattern_offset.png)
 

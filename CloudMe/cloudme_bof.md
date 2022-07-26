@@ -35,11 +35,13 @@ Al enviar datos se puede acontecer el Buffer Overflow para obtener el offset con
 
 ![pattern_buffer](./img/pattern_buffer_2.png)
 
-En la máquina victima con Immunity Debugger (ejecutar como administrador) nos sincronizamos con Cloudme, se pausará el programa darle al botón de play para que se reanude el flujo del programa.
+En la máquina victima con Immunity Debugger (ejecutar como administrador) nos sincronizamos con Cloudme, se pausará el programa darle al botón de play para que se reanude el flujo del programa. Una vez sincronicados ejecutar el script.
+
+![pattern_eip](./img/pattern_eip.png)
 
 Se determina el offset con la dirección del EIP que se obtuvo en Immunity Debugger
 
-con ``` pattern_offset -q dirección ``` se determina el offset
+Con ``` pattern_offset -q dirección ``` se determina el offset
 
 ![offset](./img/pattern_offset.png)
 
