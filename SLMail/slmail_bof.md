@@ -67,7 +67,7 @@ Para que se logre interpretar el shell code se debe dar un salto al ESP se busca
 
 ![jmp_ESP](./img/jmp_esp.png)
 
-Con ```!mona modules ``` se muestran los módulos de SLMail, se busca alguno que que tenga Rebase, Safe, ASLR, NXCompat en "False". Se escoge SLMFC.dll
+Con ```!mona modules ``` se muestran los módulos de SLMail, se busca alguno que tenga Rebase, Safe, ASLR, NXCompat en "False". Se escoge SLMFC.dll
 ![mona_modules](./img/mona_modules.png)
 
 ![module_target](/img/module_target.png)

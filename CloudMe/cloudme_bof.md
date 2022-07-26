@@ -88,7 +88,7 @@ Para que se logre interpretar el shell code se debe dar un salto al ESP, se busc
 
 ![jmp_ESP](./img/jmp_esp.png)
 
-Con ```!mona modules ``` se muestran los módulos de SLMail, se busca alguno que que tenga Rebase, Safe, ASLR, NXCompat en "False". Se escoge qsqlite.dll
+Con ```!mona modules ``` se muestran los módulos de SLMail, se busca alguno que tenga Rebase, Safe, ASLR, NXCompat en "False". Se escoge qsqlite.dll
 
 ![mona_modules](./img/mona_modules.png)
 
@@ -96,9 +96,10 @@ Con ```!mona modules ``` se muestran los módulos de SLMail, se busca alguno que
 Se busca la dirección de jmp ESP en el módulo con ```
 !mona find -s "\xff\xe4" -m qsqlite.dll ``` y se comprueba la dirreción a jmp ESP
 
+![find_jmp_addr](./img/find_jmp_esp.png)
+
 ![find_jmp](./img/esp_addr.png)
 
-Se comprueba que la dirreción apunte a jmp ESP.
 En el script de python se añade la dirección de jmp ESP pero al ser 32 bits se debe de estar en Little Endian. Para convertir a Little Endian se separa la dirección en pares y se inverte el orden ``` 6D619117 ->  1791616D ```
 
 Y finalmente se añade NOPs ```\x90``` al payload y se ejecuta el script para obtener una reverse shell
