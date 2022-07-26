@@ -39,9 +39,7 @@ En la máquina victima con Immunity Debugger (ejecutar como administrador) nos s
 
 ![pattern_eip](./img/pattern_eip.png)
 
-Se determina el offset con la dirección del EIP que se obtuvo en Immunity Debugger
-
-Con ``` pattern_offset -q dirección ``` se determina el offset
+Con ``` pattern_offset -q dirección ``` se determina el offset con la dirección del EIP que se obtuvo en Immunity Debugger
 
 ![offset](./img/pattern_offset.png)
 
